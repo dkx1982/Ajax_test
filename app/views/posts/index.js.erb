@@ -3,5 +3,5 @@
   $("#post-list").append("<%=j render :partial => "post", :locals => { :post => post }%>");
 <% end %>
 <% if @posts.any? %>
-  var current_psot_id = <%= @posts.last.id %>;
+  var current_post_id = <%= @posts.last.id %>;
 <% end %>
